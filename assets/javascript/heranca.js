@@ -18,3 +18,19 @@ class Student extends Person {
 
 let p1 = new Student("José", 1);
 console.log(p1.age);
+
+// Variavel estáticos
+// métodos estáticos
+// static não necessita de criar um novo objeto
+
+class Pessoa {
+  static hands = 2;
+  age = 0;
+
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+let p2 = new Pessoa("pedro");
+console.log(p2.name + " " + Pessoa.hands);
